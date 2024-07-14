@@ -35,6 +35,11 @@ p strong.highlighted {
   text-align: center;
 }
 
+.hubspotForm {
+  min-height: 400px;
+  text-align: center;
+}
+
 @media (min-width: 992px) {
   .main p {
     font-size: 1.5rem;

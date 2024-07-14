@@ -16,31 +16,31 @@ export const Component:FC<{}> = () => {
   const userRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
 
-  const onChangeQuestion = useCallback(
-    (evt: React.ChangeEvent<HTMLInputElement>) => {
-      dispatch({
-        type: 'UPDATE_FIELD',
-        payload: {
-          ['answer']: parseInt(evt.currentTarget.value),
-        },
-      })
-    },
-    [ dispatch ]
-  )
+  // const onChangeQuestion = useCallback(
+  //   (evt: React.ChangeEvent<HTMLInputElement>) => {
+  //     dispatch({
+  //       type: 'UPDATE_FIELD',
+  //       payload: {
+  //         ['answer']: parseInt(evt.currentTarget.value),
+  //       },
+  //     })
+  //   },
+  //   [ dispatch ]
+  // )
 
-  const onClickQuestion = useCallback(
-    (evt: React.MouseEvent<HTMLButtonElement>) => {
-      evt.preventDefault()
+  // const onClickQuestion = useCallback(
+  //   (evt: React.MouseEvent<HTMLButtonElement>) => {
+  //     evt.preventDefault()
 
-      dispatch({
-        type: 'UPDATE_FIELD',
-        payload: {
-          ['answer']: parseInt((evt.currentTarget as any).dataset.value),
-        },
-      })
-    },
-    [ dispatch ]
-  )
+  //     dispatch({
+  //       type: 'UPDATE_FIELD',
+  //       payload: {
+  //         ['answer']: parseInt((evt.currentTarget as any).dataset.value),
+  //       },
+  //     })
+  //   },
+  //   [ dispatch ]
+  // )
 
   const onChange = useCallback(
     (evt: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
@@ -155,6 +155,7 @@ export const Component:FC<{}> = () => {
     }
   }, [
     user,
+    validate,
     dispatch,
   ]);
 
@@ -262,10 +263,10 @@ export const Component:FC<{}> = () => {
     submitted,
     error,
     userRef,
-    validate,
+    // validate,
     onChange,
-    onChangeQuestion,
-    onClickQuestion,
+    // onChangeQuestion,
+    // onClickQuestion,
     onSubmit,
   ]);
 }
