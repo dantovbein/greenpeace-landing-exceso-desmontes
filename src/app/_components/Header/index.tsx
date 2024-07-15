@@ -54,7 +54,19 @@ export default function Header() {
                 backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(${picture.path})`,
               }}
             >
-              <div className={styles.logoManaos} />
+              <div
+                className={styles.logoExcesos}
+                style={{
+                  backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH}/images/logo-excesos.png)`,
+                }}
+              />
+              
+              <div
+                className={styles.logoManaos}
+                style={{
+                  backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH}/images/logo-manaos.svg)`,
+                }}
+              />
               {/* <span className={styles.credits}>{picture.credits}</span> */}
             </div>
           ))}
