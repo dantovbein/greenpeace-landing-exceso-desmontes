@@ -6,8 +6,10 @@ import { useAppContext } from '@/app/_contexts/app';
 
 type PictureType = {path: string; credits: string;};
 const pictures: Array<PictureType> = [
-  {path: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/banner/banner1.jpg`, credits: 'M.Katz / Greenpeace'},
-  {path: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/banner/banner2.jpg`, credits: 'Maxi Jonás / Greenpeace'}
+  // {path: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/banner/banner1.jpg`, credits: ''},
+  // {path: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/banner/banner2.jpg`, credits: ''}
+  {path: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/banner/EtiquetaRojaSola.jpg`, credits: ''}
+  {path: `${process.env.NEXT_PUBLIC_BASE_PATH}/images/banner/EtiquetaAmarillaEnAlta.jpg`, credits: ''}
 ];
 
 export default function Header() {
