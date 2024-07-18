@@ -2,14 +2,13 @@
 
 import { FC } from "react";
 import ThankYou from '@/app/_components/ThankYou'
-import Stats from '@/app/_components/Stats'
+import HomeText from "../_components/HomeText";
 
 const Page:FC<{}> = () => {
   return (
     <>
-      <ThankYou>
-        <Stats />
-      </ThankYou>
+      <ThankYou />
+      <HomeText />
     </>
   )
 }

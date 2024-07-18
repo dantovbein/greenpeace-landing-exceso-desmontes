@@ -1,19 +1,25 @@
 .main {
-  text-align: center;
-  width: 100%;
-  padding: 1.5rem 0;
+  padding: 30px 0 30px;
+  margin-bottom: 50px;
+  border-bottom: solid 1px grey;
 }
 
-.heading {
-  font-size: 2rem;
+.thankyou_text {
+  font-size: 2.5rem;
 }
 
-.highlighted {
-  color: var(--gp-green);
+.btnEmail {
+  display: flex;
+  background-color: #c7ffbc;
+  color: black;
+  padding: 10px 30px;
+  margin: 30px auto 10px;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
 }
 
-.trees {
-  margin-top: 2rem;
-  width: 400px !important;
-  height: auto !important;
+.icon {
+  margin-left: 10px;
 }

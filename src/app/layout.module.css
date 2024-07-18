@@ -13,4 +13,48 @@
   color: var(--body-color);
 }
 
+.main h1,
+.main h2 {
+  text-align: center;
+}
 
+.main h1 {
+  font-size: 2rem;
+}
+
+.main h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.loader {
+  display: block;
+  width: 100%;
+  text-align: center;
+  min-height: 2.5rem;
+}
+
+.main p strong.highlighted {
+  background-color: #c7ffbc;
+}
+
+.main p {
+  font-size: 1.1rem;
+  line-height: 175%;
+  margin-bottom: 1.1rem;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .main p {
+    font-size: 1.4rem;
+  }
+  
+  .main h1 {
+    font-size: 2.25rem;
+  }
+
+  .main h2 {
+    font-size: 2rem;
+  }
+}

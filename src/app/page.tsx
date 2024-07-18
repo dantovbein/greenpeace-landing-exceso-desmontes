@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 import styles from '@/app/page.module.css'
+import HomeText from './_components/HomeText';
 
 declare global {
   interface Window {
@@ -25,12 +26,7 @@ export default function Home() {
 
   return (
     <section className={styles.main}>
-      <h1 style={{textAlign: 'center'}}>MANAOS: EXCESO DE DESMONTES</h1><br/>
-      <h2>¿Sabías cuál es el ingrediente secreto de Manaos? ¡Bosques destruidos!</h2>
-      <p>La familia Canido, dueños de las gaseosas Manaos, tienen varias fincas por toda la provincia de Santiago del Estero. Allí desde hace una década vienen deforestando e intentando desalojar a familias campesinas e indígenas.</p>
-      <p>Recientemente descubrimos que realizaron el desmonte de más de 10.000 hectáreas de bosques nativos, el tamaño de media ciudad de Buenos Aires, para producción ganadera.</p>
-      <p>Las topadoras no se detienen y amenazan la rica biodiversidad de la región, con especies como el oso hormiguero, la corzuela, el pecarí, el loro hablador, y la tortuga terrestre. Además, se trata de la zona de pastoreo y uso del monte de comunidades campesinas.</p>
-      <p>Destruir bosques es un crimen. <strong className={styles.highlighted}>Exigile con tu firma a los dueños de Manaos que paren de deforestar.</strong></p>
+      <HomeText />
       <div id="hubspot-form-wrapper" className={styles.hubspotForm}>Cargando formulario ...</div>
     </section>
   )
