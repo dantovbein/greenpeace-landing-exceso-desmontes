@@ -1,6 +1,6 @@
 // import Image from 'next/image'
-import './globals.css'
-import styles from './layout.module.css'
+import '@/app/globals.css'
+import styles from '@/app/layout.module.css'
 import Header from '@/app/_components/Header'
 import Footer from '@/app/_components/Footer'
 import { Poppins } from 'next/font/google'

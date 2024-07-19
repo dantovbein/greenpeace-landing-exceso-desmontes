@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import styles from '@/app/page.module.css'
-import HomeText from './_components/HomeText';
+import HomeText from '@/app/_components/HomeText';
 
 declare global {
   interface Window {

@@ -3,7 +3,6 @@
 import { FC } from "react";
 import styles from '@/app/_components/ThankYou/styles.module.css';
 import { useAppContext } from "@/app/_contexts/app";
-import HomeText from "../HomeText";
 import Image from 'next/image';
 
 interface IProps {
@@ -23,9 +22,6 @@ export const Component:FC<IProps> = ({ children }) => {
           className={styles.btnEmail}
           href="mailto:info@refresnow.com.ar;recursoshumanos@refresnow.com.ar;social@manaosargentina.com.ar?cc=info@excesodedesmontes.org&subject=MANAOS: ¡BASTA%20DE%20DESMONTES!&body=Yo, junto a Greenpeace Argentina, exijo que los dueños de la empresa Manaos dejen de desmontar nuestros bosques nativos en Santiago del Estero. Ningún empresario debe llevar a cabo prácticas que atentan probadamente contra el ambiente y que agravan la actual situación de crisis climática y de biodiversidad que estamos viviendo. Destruir bosques es un crimen que debe terminar." target="_top">
             Enviar
-
-            {/* <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/logo-manaos.svg)`} alt='Enviar email' width={100}/> */}
-
             <Image
               src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/email.svg`}
               alt="Facebook"
