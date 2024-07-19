@@ -1,3 +1,5 @@
+'use client'
+
 import { FC } from "react";
 import ThankYou from '@/app/_components/ThankYou'
 import HomeText from "@/app/_components/HomeText";
