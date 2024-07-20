@@ -16,7 +16,7 @@ export const Component:FC<IProps> = ({ children }) => {
     <div className={styles.main}>
       { children && children }
       <h2 className={styles.thankyou_text}>Gracias por ayudarnos a detener este desmonte.</h2>
-      <p>Ahora, además puedes enviarle un mail desde tu cuenta a los dueños de Manaos para que dejen de destruir nuestros bosques.</p>
+      <p>Ahora, además podés enviarle un mail desde tu cuenta a los dueños de Manaos para que dejen de destruir nuestros bosques.</p>
       <nav>
         <a
           className={styles.btnEmail}
